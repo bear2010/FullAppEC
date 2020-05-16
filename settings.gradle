@@ -1,0 +1,2 @@
+include ':LatteECApp', ':liblatte-annotations', ':liblatte-compiler', ':libbasiccore', ':liblatte-ec'
+rootProject.name='FullAppEC'
