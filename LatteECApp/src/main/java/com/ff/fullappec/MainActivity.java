@@ -11,6 +11,9 @@ import com.ff.libbasiccore.BaseFragment;
 import com.ff.libbasiccore.GBConfig;
 import com.ff.libbasiccore.CFType;
 import com.ff.libbasiccore.ProxyActivity;
+import com.ff.liblatteec.FragmentLauncher;
+import com.ff.liblatteec.FragmentScrollFlash;
+import com.ff.liblatteec.FragmentSign;
 
 public class MainActivity extends ProxyActivity {
     private String TAG = MainActivity.class.getName();
@@ -20,7 +23,10 @@ public class MainActivity extends ProxyActivity {
     @Override
     public BaseFragment setDefaultFragment() {
         Log.d(TAG, "setDefaultFragment: ");
-        return new RootFragment();
+//        return new RootFragment();
+//        return new FragmentLauncher();
+//        return new FragmentScrollFlash();
+        return new FragmentSign();
     }
 /*
     @Override
