@@ -22,12 +22,11 @@ public class MainActivity extends ProxyActivity {
         Log.d(TAG, "setDefaultFragment: ");
         return new RootFragment();
     }
-
-/*    @Override
+/*
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        tTVtest = (TextView) findViewById(R.id.Tvtest);
+        GBConfig.setContext(this.getApplicationContext());
     }*/
 
     public void testSth(View view) {

@@ -9,8 +9,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
+//import butterknife.ButterKnife;
+//import butterknife.Unbinder;
 import me.yokeyword.fragmentation_swipeback.SwipeBackFragment;
 
 public abstract class BaseFragment extends SwipeBackFragment {
@@ -21,7 +21,7 @@ public abstract class BaseFragment extends SwipeBackFragment {
     abstract public void onBindView(@Nullable Bundle savedInstanceState,  View rootview);
 
 //    @SuppressWarnings("SpellCheckingInspection")
-    private Unbinder mUnbinder= null;
+//    private Unbinder mUnbinder= null;
 
     @Nullable
     @Override
@@ -52,8 +52,8 @@ public abstract class BaseFragment extends SwipeBackFragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        if (mUnbinder != null){
+/*        if (mUnbinder != null){
             mUnbinder.unbind();
-        }
+        }*/
     }
 }

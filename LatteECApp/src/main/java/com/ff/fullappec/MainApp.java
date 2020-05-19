@@ -13,7 +13,8 @@ public class MainApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        GBConfig.setConfig(CFType.APP_CONTEXT, this);
+        GBConfig.setContext(getApplicationContext());
+        GBConfig.setConfig(CFType.API_HOST, "https://123.sogou.com");
         Log.d(TAG, "onCreate: ");
     }
 }
