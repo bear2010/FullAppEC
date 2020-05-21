@@ -30,21 +30,21 @@ public abstract class BaseFragment extends SwipeBackFragment {
         Object mObject =  setLayout();
         View rootView = null;
         if (mObject instanceof Integer) {
-            Log.d(TAG, "onCreateView: integer");
+//            Log.d(TAG, "onCreateView: integer");
             rootView = inflater.inflate((Integer) mObject, container, false);
         } else if (mObject instanceof View) {
-            Log.d(TAG, "onCreateView: view");
+//            Log.d(TAG, "onCreateView: view");
             rootView = (View) mObject;
         }
-        Log.d(TAG, "onCreateView: go on");
+//        Log.d(TAG, "onCreateView: go on");
         if (rootView != null) {
-            Log.d(TAG, "onCreateView: not null a");
+//            Log.d(TAG, "onCreateView: not null a");
 //            mUnbinder = ButterKnife.bind(this, rootView);
-            Log.d(TAG, "onCreateView: not null b");
+//            Log.d(TAG, "onCreateView: not null b");
             onBindView(savedInstanceState, rootView);
-            Log.d(TAG, "onCreateView: not null c");
+//            Log.d(TAG, "onCreateView: not null c");
         }
-        Log.d(TAG, "onCreateView: rootview"+rootView);
+//        Log.d(TAG, "onCreateView: rootview"+rootView);
         return rootView;
 
     }

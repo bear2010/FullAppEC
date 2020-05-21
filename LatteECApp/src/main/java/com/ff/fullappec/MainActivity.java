@@ -14,6 +14,7 @@ import com.ff.libbasiccore.ProxyActivity;
 import com.ff.liblatteec.FragmentLauncher;
 import com.ff.liblatteec.FragmentScrollFlash;
 import com.ff.liblatteec.FragmentSign;
+import com.ff.liblatteec.main.EcFragmentMainPage;
 
 public class MainActivity extends ProxyActivity {
     private String TAG = MainActivity.class.getName();
@@ -26,7 +27,7 @@ public class MainActivity extends ProxyActivity {
 //        return new RootFragment();
 //        return new FragmentLauncher();
 //        return new FragmentScrollFlash();
-        return new FragmentSign();
+        return new EcFragmentMainPage();
     }
 /*
     @Override
